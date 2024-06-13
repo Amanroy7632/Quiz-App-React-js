@@ -1,0 +1,129 @@
+[
+    {
+        "question":" What is CSS?",
+        "answerOptions":[
+            {
+                "text":"CSS is a style sheet language",
+                "isCorrect":false
+            },
+            {
+                "text":"CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+                "isCorrect":false
+            },
+            {
+                "text":" CSS is the language used to style the HTML documents",
+                "isCorrect":false
+            },
+            {
+                "text":" All of the mentioned",
+                "isCorrect":true
+            }
+        ]
+        
+    },
+    {
+        "question":"Which of the following tag is used to embed css in html page?",
+        "answerOptions":[
+            {
+                "text":"<css>",
+                "isCorrect":false
+            },
+            {
+                "text":"<!DOCTYPE html>",
+                "isCorrect":false
+            },
+            {
+                "text":" <script>",
+                "isCorrect":false
+            },
+            {
+                "text":"<style>",
+                "isCorrect":true
+            }
+        ]
+    },
+    {
+        "question":"Which of the following CSS selectors are used to specify a group of elements?",
+        "answerOptions":[
+            {
+                "text":"tag",
+                "isCorrect":false
+            },
+            {
+                "text":"id",
+                "isCorrect":false
+            },
+            {
+                "text":"class",
+                "isCorrect":true
+            },
+            {
+                "text":"both class and tag",
+                "isCorrect":false
+            }
+        ]
+    },
+    {
+        "question":"Which of the following has introduced text, list, box, margin, border, color, and background properties?",
+        "answerOptions":[
+            {
+                "text":"HTML",
+                "isCorrect":false
+            },
+            {
+                "text":"PHP",
+                "isCorrect":false
+            },
+            {
+                "text":"CSS",
+                "isCorrect":true
+            },
+            {
+                "text":"Ajax",
+                "isCorrect":false
+            }
+        ]
+    },
+    {
+        "question":"Which of the following CSS framework is used to create a responsive design?",
+        "answerOptions":[
+            {
+                "text":"django",
+                "isCorrect":false
+            },
+            {
+                "text":"rails",
+                "isCorrect":false
+            },
+            {
+                "text":"larawell",
+                "isCorrect":false
+            },
+            {
+                "text":"bootstrap",
+                "isCorrect":true
+            }
+        ]
+    },
+    {
+        "question":"Which data structure is based on the Last in first Out (LIFO) principle?",
+        "answerOptions":[
+            {
+                "text":"Tree",
+                "isCorrect":false
+            },
+            {
+                "text":"Linked List",
+                "isCorrect":false
+            },
+            {
+                "text":"Stack",
+                "isCorrect":true
+            },
+            {
+                "text":"Queue",
+                "isCorrect":false
+            }
+        ]
+    }
+]
