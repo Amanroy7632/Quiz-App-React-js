@@ -58,14 +58,14 @@ function App() {
   return (
     <>
     <Header/>
-    <div className="container relative flex justify-center items-center flex-col p-6">
+    <div className="container lg:w-full relative flex justify-center items-center flex-col p-6 md:p-2">
       <h1 className=" text-4xl font-semibold">Let's solve some Quizes</h1>
       <div className=" flex justify-end w-[60%]">
         {/* <span>Timer: {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds }</span> */}
         <Timer targetDate={targetDate} isSubmitted={isSubmitted} setActiveTimeUp={setActiveTimeUp}
          />
       </div>
-      {!isSubmitted&&<div className=" w-[60%] border p-3 rounded-md shadow-xl border-gray-300 mt-5">
+      {!isSubmitted&&<div className=" w-[60%] max-sm:w-[99%] border p-3 rounded-md shadow-xl border-gray-300 mt-5">
         {/* question components */}
         <Question
           question={questions[currentQuestion]}

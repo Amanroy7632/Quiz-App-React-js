@@ -43,7 +43,7 @@ const Question = ({
               );
             })}
           </ul>
-          <div className=" flex justify-between items-center p-3 w-[50%] m-auto">
+          <div className=" flex justify-between items-center p-3 lg:w-[50%] max-sm:w-full max-md:w-full m-auto">
             <button
               onClick={onPreviousClick}
               className=" bg-gray-400 p-1 px-4 rounded-sm text-white hover:bg-gray-500 duration-200"
