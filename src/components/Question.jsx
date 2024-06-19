@@ -37,7 +37,7 @@ const Question = ({
                   //   onClick={() => onAnswerClick(option.isCorrect, index)}
                   onClick={() => selectAnswerHandler(option.isCorrect, index)}
                 >
-                  {}
+                  {String.fromCharCode(65+index).toUpperCase()+". "}
                   {option.text}
                 </li>
               );
