@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./button/Button";
 
 const Question = ({
   question,
@@ -36,6 +37,7 @@ const Question = ({
                   }`}
                   //   onClick={() => onAnswerClick(option.isCorrect, index)}
                   onClick={() => selectAnswerHandler(option.isCorrect, index)}
+                  style={{userSelect:"none"}}
                 >
                   {String.fromCharCode(65+index).toUpperCase()+". "}
                   {option.text}
@@ -44,40 +46,15 @@ const Question = ({
             })}
           </ul>
           <div className=" flex justify-between items-center p-3 lg:w-[50%] max-sm:w-full max-md:w-full m-auto">
-            <button
-              onClick={onPreviousClick}
-              className=" bg-gray-400 p-1 px-4 rounded-sm text-white hover:bg-gray-500 duration-200"
-            >
-              Previous
-            </button>
-            <button
-              onClick={() => onNextQuestionClick(currentQuestion)}
-              className=" bg-orange-600 p-1 px-6 rounded-sm text-white hover:bg-orange-700 duration-200"
-            >
-              Next
-            </button>
-            <button
-              onClick={() => onAnswerClick(item?.isCorrect, item?.index)}
-              className=" bg-green-600 p-1 px-4 text-white rounded-sm hover:bg-green-700 duration-200"
-            >
-              Save & Next
-            </button>
+            <Button onClick={onPreviousClick} className={"bg-gray-500 text-white hover:bg-gray-600"}>Previous</Button>
+            <Button onClick={()=>onNextQuestionClick(currentQuestion)} className={"bg-orange-600 text-white hover:bg-orange-700"}>Next</Button>
+            <Button onClick={()=>onAnswerClick(item?.isCorrect, item?.index)} className={"bg-green-600  text-white hover:bg-green-700"} >Save & Next</Button>
           </div>
         </>
       ) : (
-         <div className=" flex justify-center">
-          <button
-            onClick={onPreviousClick}
-            className=" bg-blue-500 px-4 py-1 rounded-md text-white font-semibold hover:bg-blue-600 duration-200"
-          >
-            ⬅ Back
-          </button>
-          <button
-            onClick={() => setIsSubmitted(true)}
-            className=" bg-blue-500 px-4 py-1 rounded-md text-white font-semibold hover:bg-blue-600 duration-200"
-          >
-            Submit your Response ➡️
-          </button>
+         <div className=" flex justify-evenly">
+          <Button onClick={onPreviousClick} className={"bg-gray-500 text-white font-semibold hover:bg-gray-600"}>⬅ Back</Button>
+          <Button onClick={()=>setIsSubmitted(true)} className={"bg-blue-700 text-white font-semibold hover:bg-blue-800"}>Submit your Response ➡️</Button>
         </div>
       )}
     </div>
